@@ -1,3 +1,5 @@
 #! /bin/bash
 
 sudo apt-get -y update && sudo apt-get -y install puppet && sudo cp -rv emptymachine/ /etc/puppet/modules
+echo "Enable with command"
+echo "sudo puppet apply -e 'class{emptymachine:}'"
